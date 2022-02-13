@@ -68,6 +68,18 @@ print("my_list:", my_list)
 print("-------------------------------------")
 
 # working with list methods
+# append() - Thêm phần tử vào cuối danh sách
+# clear() - Xóa tất cả phần tử trong danh sách
+# copy() - Sao chép danh sách
+# count() - Đếm số lần xuất hiện của phần tử trong danh sách
+# extend() - Gộp danh sách
+# index() - Tìm vị trí của phần tử trong danh sách
+# insert() - Thêm phần tử vào vị trí cụ thể trong danh sách
+# pop() - Xóa phần tử tại vị trí cụ thể trong danh sách
+# remove() - Xóa phần tử đầu tiên với giá trị cụ thể trong danh sách
+# reverse() - Đảo ngược danh sách
+# sort() - Sắp xếp danh sách
+
 numbers = [5, 2, 9, 6, 3, 1, 8]
 lucky_numbers = [4, 8, 15, 16, 23, 42]
 numbers.extend(lucky_numbers)
@@ -79,4 +91,71 @@ print("min(numbers):", min(numbers))
 print("sum(numbers):", sum(numbers))
 print("len(numbers):", len(numbers))
 
+print("-------------------------------------")
+
+# working with tuples
+coordinates = (4, 5)
+print("coordinates:", coordinates)
+print("coordinates[0]:", coordinates[0])
+print("coordinates[1]:", coordinates[1])
+print("-------------------------------------")
+
+# functions
+def say_hi(name, age):
+    print("Hello " + name + ", you are " + str(age) + " years old")
+
+say_hi("John", 22)
+
+def cube(num):
+    return num * num * num
+
+print("cube(3)", cube(3))
+print("-------------------------------------")
+
+# if statement
+is_male = True
+is_tall = True
+
+if is_male:
+    print("You are a male")
+else:
+    print("You are not a male")
+
+print("is_male or is_tall", is_male or is_tall)
+print("is_male and is_tall", is_male and is_tall)
+print("not(is_male)", not(is_male))
+print("-------------------------------------")
+
+# while loop
+i = 1
+while i <= 10:
+    print("i =", i)
+    i += 1
+print("Done loop")
+print("-------------------------------------")
+
+# for loop
+friends = ["Jim", "Karen", "Kevin"]
+for letter in "Giraffe Academy":
+    print("letter", letter)
+for friend in friends:
+    print("friend", friend)
+for index in range(3, 10):
+    print("index", index)
+for index in range(len(friends)):
+    print("friend[index]", friends[index])
+print("-------------------------------------")
+
+# comments
+# this is a comment
+'''
+this is a comment
+'''
+
+# try/except
+try:
+    number = int(input("Enter a number: "))
+    print(number)
+except ValueError:
+    print("That's not a number!")
 print("-------------------------------------")
